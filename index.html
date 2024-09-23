@@ -35,8 +35,8 @@
                     aria-label="Toggle navigation">
                     <i class="fas fa-stream"></i>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav menu-navbar-nav">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav menu-navbar-nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -56,34 +56,41 @@
                 </div>
             </div>
         </nav>
+        <br><br><br>
     </header>
-
     <section id="home">
-        <div class="container-fluid row center">
-            <div class="col-lg-6 col-sm-12">
-                <h5 class="hlo">Hello! I am</h5>
-                <h1 class="me">Ayushi Gupta</h1>
-                <h3><span class="auto-typed"></span></h3>
+        <div class="container-fluid center justify-content-center">
+            <!-- <div class="col-lg-6 col-sm-12"> -->
+                <div>
+                    <h5 class="hlo">Hello! I am</h5>
+                    <h1 class="me">Ayushi Gupta</h1>
+                    <h3><span class="auto-typed"></span></h3>
+                </div>
+                <br><br>
                 <a class="btn" download="" href="assets/Ayushi Gupta Resume.pdf">Download My CV</a>
                 <!-- <div class="mt-5">
                         <a class="main-btn primary-btn" href="#">Hire Me</a>
                         <a class="main-btn secondary-btn ms-4" href="#">Get CV</a>
                 </div> -->
-            </div>
-            <div class="col-lg-6 col-sm-12">
+            <!-- </div> -->
+            <!-- <div class="col-lg-6 col-sm-12">
                 <img src="images/me.png" width="300" height="300" class="img-fluid" />
-            </div>
+            </div> -->
         </div>
+        <br><br><br><br>
     </section>
-
     <section id="about" class="section2">
         <h2 class="heading">Something About Me</h2>
         <div class="container-fluid">
             <p>
-                My name is Ayushi Gupta & I am currently a student, pursuing B.Tech
-                Computer Science & Engineering at Bundelkhand University, Jhansi. I am
-                an ambitious one and constantly working to make my way into the IT
-                Industry. I learn new and appropriate skills to get there.
+                My name is Ayushi Gupta, and I recently completed my B.Tech in Computer Science and Engineering from Bundelkhand University, Jhansi. 
+                Throughout my academic journey, I have developed a strong foundation in software development, algorithms, and data science. 
+                I have a passion for technology and a keen interest in exploring emerging fields like artificial intelligence and machine learning.
+                <br><br>
+                I have worked on several projects that have allowed me to apply my skills in practical settings, from developing web applications to 
+                analyzing data sets for meaningful insights. I thrive in collaborative environments and enjoy tackling complex challenges. 
+                As I step into the professional world, I am eager to contribute my creativity and problem-solving abilities to innovative projects 
+                and continue learning from experienced professionals in the tech industry.
             </p>
             <br />
             <!-- <hr class="rule"> -->
@@ -128,13 +135,16 @@
 
     <section id="portfolio">
         <h2 class="heading">My Projects</h2>
+        <div class="container-fluid">
+            <p class="center green">Here are some of my frontend projects.</p>
+        </div>
         <div class="container-fluid row prj">
-            <div class="col-lg-6 col-sm-12">
+            <!-- <div class="col-lg-6 col-sm-12">
                 <a target="_blank" href="https://ayushig-7.github.io/My-Space/"><img class="img"
                         src="images/myspace.png" width="250" height="250" />
                     <h6>Login Page</h6>
                 </a>
-            </div>
+            </div> -->
             <div class="col-lg-6 col-sm-12">
                 <a target="_blank" href="https://ayushig-7.github.io/Simon-Game/"><img class="img"
                         src="images/simon.png" width="250" height="250" />
@@ -147,7 +157,10 @@
                     <h6>Dice Game</h6>
                 </a>
             </div>
-            <div class="col-lg-6 col-sm-12">
+        </div>
+            <div class="container-fluid row prj">
+            <div class="col-lg-4 col-sm-12"></div>
+            <div class="col-lg-4 col-sm-12">
                 <a target="_blank" href="https://ayushig-7.github.io/Drum-Kit/"><img class="img" src="images/drum.png"
                         width="250" height="250" />
                     <h6>Drum Kit</h6>
@@ -156,9 +169,18 @@
         </div>
     </section>
 
-    <section id="contact" class="container-fluid">
-        <h2 class="heading">Get In Touch</h2>
-        <a class="btn" href="mailto:aayushibgupta@gmail.com">Contact Me</a>
+    <section id="contact" class="container-fluid contact">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="title">
+                <h2 class="heading">Get In Touch</h2>
+            </div>
+            <input type="hidden" name="access_key" value="cf50ed46-a55f-43da-adff-fd2df7b9c77f">
+            <input type="text" name="name" placeholder="Your Name" class="input" required>
+            <input type="email" name="email" placeholder="Your Email" class="input" required>
+            <textarea name="message" placeholder="Your Message" class="input msg" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <br><br>
+        </form>
     </section>
 
     <section id="footer" class="container-fluid center">
